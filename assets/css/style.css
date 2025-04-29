@@ -3,7 +3,9 @@
      /* COLOURS */
      --black: #0c0c0c;
      --purple: #cb398d;
+     --purple-40: rgba(239, 154, 204, 0.3);
      --cream: #fffefa;
+
 
      /* SIZES */
 
@@ -75,14 +77,20 @@ h2 {
      margin-bottom: var(--small);
      margin-top: var(--small);
      font-weight: 700;
+
+     color: var(--purple);
 }
 
 h3 {
      font-size: var(--h3);
      font-style: italic;
-     margin-bottom: var(--small);
-     margin-top: var(--small);
      font-weight: 600;
+     color: var(--purple);
+
+     background-color: var(--purple-40);
+
+     margin: var(--small) -2rem var(--small) -2rem;
+     padding: var(--small) 2rem var(--small) 2rem;
 }
 
 h4 {
@@ -90,7 +98,7 @@ h4 {
      font-weight: 600;
 
      margin-bottom: var(--x-small);
-     margin-top: var(--x-small);
+     margin-top: var(--medium);
 }
 
 a {

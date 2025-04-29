@@ -3,15 +3,40 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     <!-- BLOG STYLESHEET -->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+     <!-- BLOG JAVASCRIPT -->
+      <script src="assets/js/script.js" defer></script>
+     
      <title>Nilu's MDS Blog</title>
+
+
 </head>
-<body>
+<body class="grid-container">
      <header>
-          <h1>Nilu's MDS Blog</h1>
+          <div class="masthead">
+               <h1>Nilu's MDS Blog</h1>
+               <a href="#" class="mobile icon menu">
+                    <svg><use href="assets/images/icons/icons.svg#menu-icon"/></svg>
+                    <!-- <img class="icon menu" src="assets/images/icons/bars.svg" alt="Menu Icon"> -->
+               </a>
+          </div>
+          
           <p><em>A weekly blog documenting how  I progress with the 'New Enterprises' project.</em></p>
-          <nav>
-               <ul>
-                    <li><a href="index.html">Week 1</a></li>
+          <nav class="nav-menu hide">
+               <a href="#" class="mobile icon close">
+                    <svg><use href="assets/images/icons/icons.svg#close-icon"/></svg>                      
+                    <!-- <img class="icon close" src="assets/images/icons/xmark.svg" alt="A close icon"> -->
+               </a>
+               <ul class="desktop nav-items">
+                    <li class="current"><a href="index.html">Week 1</a></li>
                     <li><a href="week-2.html">Week 2</a></li>
                     <li><a href="week-3.html">Week 3</a></li>
                     <li><a href="week-4.html">Week 4</a></li>
@@ -22,5 +47,32 @@
                </ul>
           </nav>
      </header>
+     <main>
+          <h2>Week 6</h2>
+          <!-- <h3>Monday, 28-Mar-2025</h3>
+          <h4>What did I do today?</h3>
+          <ul>
+               <li>Reviewed the brief and identified potential areas that I'd like to explore briefly before deciding on which topic to settle on.</li>
+               <ul>
+                    <li>Two areas that call out to me immdiately are 'food security' and 'civic participation'.</li>
+               </ul>
+               <li>I've also set up a small blog to document the progress of the project.</li>
+          </ul>
+          <h4>Are there any blockers?</h4>
+          <ul>
+               <li>None at the moment.</li>
+          </ul> -->
+          <!-- <h3>Tuesday, 28-Mar-2025</h3>
+          <h3>Wednesday, 28-Mar-2025</h3>
+          <h3>Thursday, 28-Mar-2025</h3>
+          <h3>Friday, 28-Mar-2025</h3>
+          <h3>Week 1 Retrospective</h3> -->
+          <!-- <h3>What went well</h3>
+          <h3>What didn't go well</h3>
+          <h3>What actions will I take for the next sprint</h3> -->
+     </main>
+     <footer>
+          <p class="small">This website is created for educational purposes only.</p>
+     </footer>
 </body>
 </html>

@@ -149,6 +149,7 @@ header {
      background-color: var(--purple);
      width: 70vw;
      height: 100vh;
+     overflow-y: scroll;
 
      margin: -2rem;
      padding: var(--large);

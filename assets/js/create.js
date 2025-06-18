@@ -1,4 +1,4 @@
-import { supabase } from "./connection.js";
+import { supabase } from "./anon-connection.js";
 
 const form = document.querySelector("form");
 

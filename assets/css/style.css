@@ -88,11 +88,6 @@ h3 {
      font-style: italic;
      font-weight: 600;
      color: var(--purple);
-
-     background-color: var(--purple-40);
-
-     margin: var(--small) -2rem var(--small) -2rem;
-     padding: var(--small) 2rem var(--small) 2rem;
 }
 
 h4 {
@@ -122,7 +117,7 @@ img {
      text-decoration: none;
 
      font-weight: 700;
-     letter-spacing: 10%;
+     letter-spacing: 5%;
      color: var(--purple);
 
      border: none;
@@ -240,6 +235,27 @@ li {
      margin-bottom: var(--base);
      font-style: italic;
 
+}
+
+.post-header {
+     display: flex;
+     justify-content: space-between;
+
+     font-size: var(--h3);
+     font-style: italic;
+     font-weight: 600;
+     color: var(--purple);
+
+     background-color: var(--purple-40);
+
+     margin: var(--small) -2rem var(--small) -2rem;
+     padding: var(--small) 2rem var(--small) 2rem;
+
+     a {
+          font-size: var(--h5);
+
+          align-self: center;
+     }
 }
 
 /* FORM STYLING */

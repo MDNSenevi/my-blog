@@ -2,8 +2,10 @@
 :root {
      /* COLOURS */
      --black: #0c0c0c;
+     --black-40: rgba(12,12,12,0.3);
      --purple: #cb398d;
      --purple-40: rgba(239, 154, 204, 0.3);
+     --purple-50: rgba(95, 8, 59, 0.3);
      --cream: #fffefa;
 
 
@@ -109,7 +111,35 @@ img {
      display: block;
 }
 
+.action-link {
+     display: inline-block;
 
+     
+     font-size: var(--h4);
+     font-family: var(--header-font);
+     font-style: italic;
+
+     text-decoration: none;
+
+     font-weight: 700;
+     letter-spacing: 10%;
+     color: var(--purple);
+
+     border: none;
+     border-radius: var(--small);
+
+     cursor: pointer;
+
+
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}
+
+.action-btns {
+     margin-top: var(--base);
+}
 
 /* HEADER */
 header {
@@ -205,6 +235,86 @@ li {
 .day:last-of-type {
      margin-bottom: 0;
 }
+
+.help {
+     margin-bottom: var(--base);
+     font-style: italic;
+
+}
+
+/* FORM STYLING */
+
+form {
+     display: flex;
+     flex-direction: column;
+     gap: var(--medium);
+}
+
+.form-field {
+     display: flex;
+     flex-direction: column;
+     gap: var(--small);
+}
+
+.form-field select {
+     width: fit-content;
+     min-width: 50px;
+     height: var(--large);
+
+     padding: var(--small);
+}
+
+.form-field input {
+     height: fit-content;
+     min-height: var(--large);
+     font-size: var(--base);
+
+     padding: var(--small);
+     padding-top: var(--small);
+     padding-bottom: var(--small);
+}
+
+form .action-btns {
+     margin-top: var(--small);
+}
+
+button {
+
+     background-color: var(--purple-40);
+
+     text-decoration: none;
+
+     font-weight: 700;
+
+     text-transform: uppercase;
+     letter-spacing: 5%;
+     color: var(--purple);
+
+     padding: var(--small) var(--base);
+
+     border: none;
+     border-radius: var(--small);
+     cursor: pointer;
+}
+
+button:hover {
+     background-color: var(--purple);
+     color: var(--cream);
+}
+
+.form-field textarea {
+     font-size: var(--base);
+
+     padding: var(--small);
+     padding-top: var(--small);
+     padding-bottom: var(--small);
+}
+
+label {
+     font-weight: 500;
+     font-size: var(--h6);
+}
+
 
 /* FOOTER */
 

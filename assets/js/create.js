@@ -10,7 +10,7 @@ form.addEventListener('submit', async (event) => {
      const title = formData.get('title');
      const content = formData.get('content');
 
-     const {data} = await supabase
+     const {data: post} = await supabase
           .from('posts')
           .insert({
                title, content, week
@@ -18,5 +18,9 @@ form.addEventListener('submit', async (event) => {
           .select()
           .single();
 
-     window.location.href = `week-${week}.html?week=${week}`;
+      if (post.week == 1 ) {
+           window.location.href = `index.html?week=${post.week}`;
+     } else {
+           window.location.href = `week-${post.week}.html?week=${post.week}`;
+     } 
 });

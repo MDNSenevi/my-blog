@@ -9,10 +9,14 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+     <!-- MARKDOWN CONVERTER -->
+      <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+
      <!-- BLOG STYLESHEET -->
       <link rel="stylesheet" href="assets/css/style.css">
 
      <!-- BLOG JAVASCRIPT -->
+      <script type="module" src="/assets/js/posts.js" defer></script>
       <script src="assets/js/script.js" defer></script>
      
      <title>Nilu's MDS Blog</title>
@@ -30,144 +34,31 @@
           </div>
           
           <p><em>A blog documenting how  I progress with the 'New Enterprises' project.</em></p>
+
+          <div class="action-btns">
+               <a href="create.html" class="action-link" id="create-post-btn">Create post</a>
+          </div>
+
           <nav class="nav-menu hide">
                <a href="#" class="mobile icon close">
                     <svg><use href="assets/images/icons/icons.svg#close-icon"/></svg>                      
                     <!-- <img class="icon close" src="assets/images/icons/xmark.svg" alt="A close icon"> -->
                </a>
                <ul class="desktop nav-items">
-                    <li><a href="index.html">Week 1</a></li>
-                    <li class="current"><a href="week-2.html">Week 2</a></li>
-                    <li><a href="week-3.html">Week 3</a></li>
-                    <li><a href="week-4.html">Week 4</a></li>
-                    <li><a href="week-5.html">Week 5</a></li>
-                    <li><a href="week-6.html">Week 6</a></li>
-                    <li><a href="week-7.html">Week 7</a></li>
-                    <li><a href="week-8.html">Week 8</a></li>
+                    <li><a href="index.html?week=1">Week 1</a></li>
+                    <li class="current"><a href="week-2.html?week=2">Week 2</a></li>
+                    <li><a href="week-3.html?week=3">Week 3</a></li>
+                    <li><a href="week-4.html?week=4">Week 4</a></li>
+                    <li><a href="week-5.html?week=5">Week 5</a></li>
+                    <li><a href="week-6.html?week=6">Week 6</a></li>
+                    <li><a href="week-7.html?week=7">Week 7</a></li>
+                    <li><a href="week-8.html?week=8">Week 8</a></li>
                </ul>
           </nav>
      </header>
      <main>
           <h2>Week 2</h2>
-          <section class="day">
-               <h3>Monday, 05-May-2025</h3>
-               <h4>What did I do over the weekend?</h3>
-               <ul>
-                    <li>Continued some of the content extraction from the secondary research.</li>
-                    <li>Updated the discussion guide based on the secondary research</li>
-                    <li>Made a plan for upcoming week.</li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li>Conduct 3 user interviews.</li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li>None at the moment.</li>
-               </ul>
-          </section>
-          <section class="day">
-               <h3>Tuesday, 06-May-2025</h3>
-               <h4>What did I do yesterday?</h3>
-               <ul>
-                    <li>Conducted majority of the user interviews for the primary research.</li>
-                    <ul>
-                         <li>Based on what we covered, I don't think I can pursue the 'food security' as all respondents yesterday didn't face that hardship.</li>
-                         <li>Emerging pain point seems to be around planning and decision makeing around meal planning.</li>
-                         <li>Interesting to note that based on secondary research food waste is generated because of ill planning - so there might be a problem in that.</li>
-                    </ul>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li>Complete the remainder of the interviews.</li>
-                    <li>Start detailed analysis for the interviews.</li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li>Not for today - but I can see I won't have as much time as I would like this week due to attending the symposium and workshops related to it.</li>
-               </ul>
-          </section>
-          <section class="day">
-               <h3>Wednesday, 07-May-2025</h3>
-               <h4>What did I do yesterday?</h3>
-                    <ul>
-                         <li>Completed the interviews.</li>
-                    </ul>
-                    <h4>What will I do today?</h3>
-                    <ul>
-                         <li>High level analysis to get emerging trends based on my notes during interview.</li>
-                         <li>Start on detailed analysis based on transcripts</li>
-                         <li>Create WIP 1 deck.</li>
-                         <li>Attend Design Futures workshop.</li>
-
-                    </ul>
-                    <h4>Are there any blockers?</h4>
-                    <ul>
-                         <li>None at the moment.</li>
-                    </ul>
-          </section>
-          <section class="day">
-               <h3>Thursday, 08-May-2025</h3>
-               <h4>What did I do yesterday?</h3>
-                    <ul>
-                         <li>Continued analysis.</li>
-                         <li>Created WIP 1 deck, took longer than I expected but managed to submit in time.</li>
-                    </ul>
-                    <h4>What will I do today?</h3>
-                    <ul>
-                         <li>Continue detailed analysis based on transcripts.</li>
-                         <li>Present WIP.</li>
-                    </ul>
-                    <h4>Are there any blockers?</h4>
-                    <ul>
-                         <li>None at the moment.</li>
-                    </ul>
-          </section>
-          <section class="day">
-               <h3>Friday, 09-May-2025</h3>
-               <h4>What did I do yesterday?</h3>
-                    <ul>
-                         <li>Presented WIP and got great feedback!</li>
-                         <ul>
-                              <li>I feel like I'm behind on things so this weekend I'll be catching up on things.</li>
-                         </ul>
-                         <li>Continued detailed analysis based on transcripts.</li>
-                    </ul>
-                    <h4>What will I do today?</h3>
-                    <ul>
-                         <li>Attend the Designing Futures symposium.</li>
-                         <li>Review the problem statement.</li>
-                         <li>Continue with analysis - it's going faster this time round!</li>
-                    </ul>
-                    <h4>Are there any blockers?</h4>
-                    <ul>
-                         <li>None at the moment.</li>
-                    </ul>
-          </section>
-          <section class="day">
-               <h3>Week 2 Retrospective</h3>
-               <h4>What went well?</h4>
-               <ul>
-                    <li>I managed to narrow my problem statement based on the emerging themes from the interviews.</li>
-                    <li>I also managed to complete my interviews in two days - which is great!</li>
-                    <li>Planning out the second week went better than first week.</li>
-                    <li>Learned so much during the 'Designing Futures' symposium and workshop &mdash; so inspiring! :D</li>
-               </ul>
-               <h4>What didn't go well?</h4>
-               <ul>
-                    <li>I didn't realise how much time will be taken by the symposium and attending the workshop beforehand.</li>
-                    <li>My planning needs to be a bit more detailed and look ahead.</li>
-                    <li>I still need to work on the weekend and play catch up &mdash; on the analysis and problem statement refinment.</li>
-               </ul>
-               <h4>What actions will I take for the next sprint?</h4>
-               <ul>
-                    <li>Have a more detailed plan for the next few week by end of Sunday.</li>
-                    <ul>
-                         <li>There are lots of personal events and assignments coming up in the next two weeks.</li>
-                    </ul>
-                    
-               </ul>
-          </section>
+          <div id="posts"></div>
      </main>
      <footer>
           <p class="small">This website is created for educational purposes only.</p>

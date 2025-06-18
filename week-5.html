@@ -9,10 +9,14 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+     <!-- MARKDOWN CONVERTER -->
+      <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+
      <!-- BLOG STYLESHEET -->
       <link rel="stylesheet" href="assets/css/style.css">
 
      <!-- BLOG JAVASCRIPT -->
+      <script type="module" src="/assets/js/posts.js" defer></script>
       <script src="assets/js/script.js" defer></script>
      
      <title>Nilu's MDS Blog</title>
@@ -30,120 +34,31 @@
           </div>
           
           <p><em>A blog documenting how  I progress with the 'New Enterprises' project.</em></p>
+
+          <div class="action-btns">
+               <a href="create.html" class="action-link" id="create-post-btn">Create post</a>
+          </div>
+
           <nav class="nav-menu hide">
                <a href="#" class="mobile icon close">
                     <svg><use href="assets/images/icons/icons.svg#close-icon"/></svg>                      
                     <!-- <img class="icon close" src="assets/images/icons/xmark.svg" alt="A close icon"> -->
                </a>
                <ul class="desktop nav-items">
-                    <li><a href="index.html">Week 1</a></li>
-                    <li><a href="week-2.html">Week 2</a></li>
-                    <li><a href="week-3.html">Week 3</a></li>
-                    <li><a href="week-4.html">Week 4</a></li>
-                    <li class="current"><a href="week-5.html">Week 5</a></li>
-                    <li><a href="week-6.html">Week 6</a></li>
-                    <li><a href="week-7.html">Week 7</a></li>
-                    <li><a href="week-8.html">Week 8</a></li>
+                    <li><a href="index.html?week=1">Week 1</a></li>
+                    <li><a href="week-2.html?week=2">Week 2</a></li>
+                    <li><a href="week-3.html?week=3">Week 3</a></li>
+                    <li><a href="week-4.html?week=4">Week 4</a></li>
+                    <li class="current"><a href="week-5.html?week=5">Week 5</a></li>
+                    <li><a href="week-6.html?week=6">Week 6</a></li>
+                    <li><a href="week-7.html?week=7">Week 7</a></li>
+                    <li><a href="week-8.html?week=8">Week 8</a></li>
                </ul>
           </nav>
      </header>
      <main>
           <h2>Week 5</h2>
-         <section class="day">
-               <h3>Monday, 26-May-2025</h3>
-               <h4>What did I do over the weekend?</h3>
-               <ul>
-                    <li>Explored logo designs</li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li>N/A</li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li>I had to take the day off due to personal reasons.</li>
-               </ul>
-          </section>
-          <section class="day">
-               <h3>Tuesday, 27-May-2025</h3>
-                <h4>What did I do yesterday?</h3>
-               <ul>
-                    <li>Nothing</li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li>Create the logo and stylescape.</li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li>I've lost a day yesterday due to personal reasons. Hopefully rest of the week should be going smoothly *fingers crossed*</li>
-               </ul>
-          </section>
-          <section class="day">
-               <h3>Wednesday, 28-May-2025</h3>
-              <h4>What did I do yesterday?</h3>
-               <ul>
-                    <li>Started on the stylescapes, working through the typography and colours</li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li>Focus on the logo for the brand</li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li>Still not at 100% normal capacity as being affected by personal event.</li>
-               </ul>
-          </section>
-          <section class="day">
-               <h3>Thursday, 29-May-2025</h3>
-               <h4>What did I do yesterday?</h3>
-                <ul>
-                    <li>Completed the stylescape</li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li>Submitted for approval from lecturers.</li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li>Still not at 100% normal capacity as being affected by personal event.</li>
-               </ul>
-          </section>
-          <section class="day">
-               <h3>Friday, 30-May-2025</h3>
-               <h4>What did I do yesterday?</h3>
-                <ul>
-                    <li>Sent the stylescape to get approval from lecturers</li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li>Start on the refinements for the brand.</li>
-                    <li>Meet with Simon to get feedback on the branding so far and the Type Here assignment.</li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li>I don't think I'll have time to catch up this weekend as I'll be focusing on my portfolio for the industry review workshop next week</li>
-               </ul>
-          </section>
-          <section class="day">
-               <h3>Week 5 Retrospective</h3>
-               <h4>What went well?</h4>
-               <ul>
-                    <li>I found out that I can submit things for offline review, rather than organising a 1:1 mentoring session.</li>
-                    <li>This is a game changer, so I don't have to wait till end of the week to review things!</li>
-               </ul>
-               <h4>What didn't go well?</h4>
-               <ul>
-                    <li>Most things - I had to throw most of my plan for the week out due to some unexpected personal events.</li>
-                    <li>Catching up was difficult, due to at home distractions.</li>
-                    <li>Limited time over the weekend means that I'll be running behind next week.</li>
-                    <li>Also, given the fact that there is so much to catch up on I'm expecting some loss of motivation next week and procrastination setting in. :/</li>
-               </ul>
-               <h4>What actions will I take for the next sprint?</h4>
-               <ul>
-                    <li>Send more things to review/get feedback from the lecturers for offline review.</li>
-               </ul>
-          </section>
+        <div id="posts"></div>
      </main>
      <footer>
           <p class="small">This website is created for educational purposes only.</p>

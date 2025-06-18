@@ -1,4 +1,4 @@
-import { supabase } from "./secure-connection.js";
+import { supabase } from "./anon-connection.js";
 
 // Initiate markdown converter
 let converter = new showdown.Converter();

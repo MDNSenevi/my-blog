@@ -9,11 +9,16 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+     <!-- MARKDOWN CONVERTER -->
+      <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+
      <!-- BLOG STYLESHEET -->
       <link rel="stylesheet" href="assets/css/style.css">
 
      <!-- BLOG JAVASCRIPT -->
+      <script type="module" src="assets/js/posts.js" defer></script>
       <script src="assets/js/script.js" defer></script>
+     
      
      <title>Nilu's MDS Blog</title>
 
@@ -30,6 +35,9 @@
           </div>
           
           <p><em>A blog documenting how  I progress with the 'New Enterprises' project.</em></p>
+          <div class="action-btns">
+               <a href="create.html" class="action-link" id="create-post-btn">Create post</a>
+          </div>
           <nav class="nav-menu hide">
                <a href="#" class="mobile icon close">
                     <svg><use href="assets/images/icons/icons.svg#close-icon"/></svg>                      
@@ -49,96 +57,7 @@
      </header>
      <main>
           <h2>Week 7</h2>
-          <section class="day">
-               <!-- <h3>Monday, 19-May-2025</h3>
-               <h4>What did I do over the weekend?</h3>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li></li>
-               </ul> -->
-          </section>
-          <section class="day">
-               <!--<h3>Tuesday, 20-May-2025</h3>
-                <h4>What did I do yesterday?</h3>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li></li>
-               </ul> -->
-          </section>
-          <section class="day">
-               <!--<h3>Wednesday, 21-May-2025</h3>
-              <h4>What did I do yesterday?</h3>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li></li>
-               </ul> -->
-          </section>
-          <section class="day">
-               <!--<h3>Thursday, 22-May-2025</h3>
-               <h4>What did I do yesterday?</h3>
-                <ul>
-                    <li></li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li></li>
-               </ul> -->
-          </section>
-          <section class="day">
-               <!--<h3>Friday, 23-May-2025</h3>
-               <h4>What did I do yesterday?</h3>
-                <ul>
-                    <li></li>
-               </ul>
-               <h4>What will I do today?</h3>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>Are there any blockers?</h4>
-               <ul>
-                    <li></li>
-               </ul> -->
-          </section>
-          <section class="day">
-               <!--<h3>Week 5 Retrospective</h3>
-               <h4>What went well?</h4>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>What didn't go well?</h4>
-               <ul>
-                    <li></li>
-               </ul>
-               <h4>What actions will I take for the next sprint?</h4>
-               <ul>
-                    <li></li>
-               </ul> -->
-          </section>
+          <section id="posts"></section>
      </main>
      <footer>
           <p class="small">This website is created for educational purposes only.</p>
